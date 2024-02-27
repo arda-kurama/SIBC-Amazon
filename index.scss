@@ -1,0 +1,40 @@
+$White: rgb(255, 255, 255);
+$DarkGray: rgb(108, 108, 108);
+$Gray: rgb(212, 212, 212);
+$Black: rgb(14, 23, 38);
+$LightBlue: rgb(244, 250, 253);
+$LightYellow: rgb(255, 227, 154);
+
+$Title: 48px;
+$Header: 36px;
+$Accordion: 18px;
+$Subtitle: 14px;
+$Body: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  padding: 12vw 0;
+
+  .content {
+    width: 90vw;
+    margin: 0 auto;
+
+    .subtitle {
+      font-size: $Subtitle;
+    }
+
+    .body {
+    }
+  }
+}

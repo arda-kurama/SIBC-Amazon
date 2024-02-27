@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  padding: 12vw 0;
+}
+.hero .content {
+  width: 90vw;
+  margin: 0 auto;
+}
+.hero .content .subtitle {
+  font-size: 14px;
+}/*# sourceMappingURL=index.css.map */
