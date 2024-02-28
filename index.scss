@@ -5,11 +5,17 @@ $Black: rgb(14, 23, 38);
 $LightBlue: rgb(244, 250, 253);
 $LightYellow: rgb(255, 227, 154);
 
-$Title: 48px;
+$Teal: rgb(119, 163, 148);
+$Blue: rgb(83, 106, 124);
+$LightBlue: rgb(68, 137, 159);
+$Yellow: rgb(194, 162, 113);
+
+$Title: 78px;
+$Subtitle: 48px;
+$Body: 28px;
+
 $Header: 36px;
 $Accordion: 18px;
-$Subtitle: 14px;
-$Body: 16px;
 
 * {
   margin: 0;
@@ -23,9 +29,108 @@ html {
   scroll-behavior: smooth;
 }
 
-.hero {
-  padding: 12vw 0;
+body {
+  .title {
+    font-size: $Title;
+    color: $White;
+  }
 
+  .subtitle {
+    font-size: $Subtitle;
+    color: $White;
+  }
+
+  .body {
+    font-size: $Body;
+    color: $White;
+  }
+}
+
+.landing {
+  height: 45vw;
+  display: flex;
+
+  .left {
+    background: linear-gradient(145deg, $LightBlue, $Teal, $Yellow);
+    width: 75vw;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0 0 2rem;
+
+    .bottom {
+      font-weight: 400;
+      margin-bottom: 4vw;
+
+      .body {
+        font-style: italic;
+      }
+
+      #exception {
+        margin-top: 4rem;
+        font-weight: 300;
+      }
+    }
+
+    .top {
+      .subtitle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+          height: auto;
+          width: 48px;
+          filter: invert(1);
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+  .right {
+    width: 25vw;
+
+    .top {
+      background-color: $LightBlue;
+      color: $LightBlue;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+
+      .body {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        justify-content: center;
+        font-weight: 300;
+
+        img {
+          height: auto;
+          width: 48px;
+          filter: invert(1);
+          padding-top: 6px;
+        }
+
+        #exception {
+          font-size: $Subtitle;
+        }
+      }
+      #shift {
+        margin-left: 10px;
+      }
+    }
+
+    .bottom {
+      background-color: $Blue;
+      height: 50%;
+    }
+  }
+}
+
+.hero {
   .content {
     width: 90vw;
     margin: 0 auto;

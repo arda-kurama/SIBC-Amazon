@@ -9,13 +9,94 @@ html {
   scroll-behavior: smooth;
 }
 
-.hero {
-  padding: 12vw 0;
+body .title {
+  font-size: 78px;
+  color: rgb(255, 255, 255);
 }
+body .subtitle {
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+}
+body .body {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+}
+
+.landing {
+  height: 45vw;
+  display: flex;
+}
+.landing .left {
+  background: linear-gradient(145deg, rgb(68, 137, 159), rgb(119, 163, 148), rgb(194, 162, 113));
+  width: 75vw;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 0 2rem;
+}
+.landing .left .bottom {
+  font-weight: 400;
+  margin-bottom: 4vw;
+}
+.landing .left .bottom .body {
+  font-style: italic;
+}
+.landing .left .bottom #exception {
+  margin-top: 4rem;
+  font-weight: 300;
+}
+.landing .left .top .subtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.landing .left .top .subtitle img {
+  height: auto;
+  width: 48px;
+  filter: invert(1);
+  padding-top: 6px;
+}
+.landing .right {
+  width: 25vw;
+}
+.landing .right .top {
+  background-color: rgb(68, 137, 159);
+  color: rgb(68, 137, 159);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.landing .right .top .body {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+  font-weight: 300;
+}
+.landing .right .top .body img {
+  height: auto;
+  width: 48px;
+  filter: invert(1);
+  padding-top: 6px;
+}
+.landing .right .top .body #exception {
+  font-size: 48px;
+}
+.landing .right .top #shift {
+  margin-left: 10px;
+}
+.landing .right .bottom {
+  background-color: rgb(83, 106, 124);
+  height: 50%;
+}
+
 .hero .content {
   width: 90vw;
   margin: 0 auto;
 }
 .hero .content .subtitle {
-  font-size: 14px;
+  font-size: 48px;
 }/*# sourceMappingURL=index.css.map */
