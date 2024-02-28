@@ -23,7 +23,7 @@ body .body {
 }
 
 .landing {
-  height: 45vw;
+  height: 48vw;
   display: flex;
 }
 .landing .left {
@@ -91,6 +91,30 @@ body .body {
 .landing .right .bottom {
   background-color: rgb(83, 106, 124);
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing .right .bottom img {
+  height: auto;
+  width: 10vw;
+  box-shadow: 2px 2px 8px rgb(14, 23, 38);
+}
+.landing .right .bottom #exception {
+  width: 8vw;
+  filter: brightness(0) invert(1);
+  box-shadow: 0 0 0;
+  margin-bottom: 12px;
+}
+.landing .right .bottom .body {
+  margin: 16px;
+  margin: 12px 0 0 0;
+}
+.landing .right .bottom #italic {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .hero .content {
