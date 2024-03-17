@@ -17,6 +17,10 @@ body .subtitle {
   font-size: 48px;
   color: rgb(255, 255, 255);
 }
+body .header {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+}
 body .body {
   font-size: 28px;
   color: rgb(255, 255, 255);
@@ -34,6 +38,7 @@ body .body {
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0 0 2rem;
+  text-decoration: none;
 }
 .landing .left .bottom {
   font-weight: 400;
@@ -117,10 +122,49 @@ body .body {
   font-size: 24px;
 }
 
-.hero .content {
-  width: 90vw;
-  margin: 0 auto;
+.hero {
+  height: 48vw;
+  background-image: url("MainBackground.jpg"), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 55%);
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
-.hero .content .subtitle {
-  font-size: 48px;
+.hero .header {
+  padding: 1rem;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+}
+.hero .content {
+  margin: 15vw auto;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.hero .content .section {
+  border-radius: 16px;
+}
+.hero .content .section img {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  height: 12vw;
+  width: 12vw;
+}
+.hero .content .section #exception {
+  padding: 0;
+}
+.hero .content .section .body {
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+.hero .content .section .info {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 6px;
+  background-color: rgb(109, 109, 109);
+  text-align: center;
+  border-radius: 32px;
+  margin-top: 7vw;
 }/*# sourceMappingURL=index.css.map */

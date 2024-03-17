@@ -1,20 +1,16 @@
 $White: rgb(255, 255, 255);
-$DarkGray: rgb(108, 108, 108);
-$Gray: rgb(212, 212, 212);
-$LightBlue: rgb(244, 250, 253);
-$LightYellow: rgb(255, 227, 154);
-
 $Black: rgb(14, 23, 38);
 $Teal: rgb(119, 163, 148);
 $Blue: rgb(83, 106, 124);
 $LightBlue: rgb(68, 137, 159);
 $Yellow: rgb(194, 162, 113);
+$Gray: rgb(109, 109, 109);
 
 $Title: 78px;
 $Subtitle: 48px;
+$Header: 36px;
 $Body: 28px;
 
-$Header: 36px;
 $Accordion: 18px;
 
 * {
@@ -40,6 +36,11 @@ body {
     color: $White;
   }
 
+  .header {
+    font-size: $Header;
+    color: $White;
+  }
+
   .body {
     font-size: $Body;
     color: $White;
@@ -58,6 +59,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 0 0 2rem;
+    text-decoration: none;
 
     .bottom {
       font-weight: 400;
@@ -159,15 +161,56 @@ body {
 }
 
 .hero {
+  height: 48vw;
+  background-image: url("MainBackground.jpg"),
+    linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1) 55%);
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: soft-light;
+
+  .header {
+    padding: 1rem;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+  }
+
   .content {
-    width: 90vw;
-    margin: 0 auto;
+    margin: 15vw auto;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
 
-    .subtitle {
-      font-size: $Subtitle;
-    }
+    .section {
+      border-radius: 16px;
 
-    .body {
+      img {
+        background-color: $White;
+        padding: 1rem;
+        height: 12vw;
+        width: 12vw;
+      }
+
+      #exception {
+        padding: 0;
+      }
+
+      .body {
+        font-weight: 600;
+        padding-top: 0.5rem;
+      }
+
+      .info {
+        color: $White;
+        font-size: $Body;
+        font-weight: 600;
+        font-style: italic;
+        padding: 6px;
+        background-color: $Gray;
+        text-align: center;
+        border-radius: 32px;
+        margin-top: 7vw;
+      }
     }
   }
 }
