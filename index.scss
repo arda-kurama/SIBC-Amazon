@@ -48,7 +48,8 @@ body {
 }
 
 .landing {
-  height: 48vw;
+  height: 100vh;
+  width: 100%;
   display: flex;
 
   .left {
@@ -91,7 +92,7 @@ body {
     }
   }
   .right {
-    width: 25vw;
+    width: 30rem;
 
     .top {
       background-color: $LightBlue;
@@ -135,7 +136,7 @@ body {
 
       img {
         height: auto;
-        width: 10vw;
+        width: 10rem;
         box-shadow: 2px 2px 8px $Black;
       }
 
@@ -161,8 +162,9 @@ body {
 }
 
 .hero {
-  height: 48vw;
-  background-image: url("MainBackground.jpg"),
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Media/MainBackground.jpg"),
     linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1) 55%);
   background-position: top;
   background-size: cover;
@@ -176,10 +178,16 @@ body {
   }
 
   .content {
-    margin: 15vw auto;
+    margin: 16rem auto;
     display: flex;
     justify-content: center;
     gap: 2vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
 
     .section {
       border-radius: 16px;
@@ -187,8 +195,8 @@ body {
       img {
         background-color: $White;
         padding: 1rem;
-        height: 12vw;
-        width: 12vw;
+        height: 14rem;
+        width: 14rem;
       }
 
       #exception {
@@ -209,8 +217,12 @@ body {
         background-color: $Gray;
         text-align: center;
         border-radius: 32px;
-        margin-top: 7vw;
+        margin-top: 12rem;
       }
     }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
