@@ -126,7 +126,7 @@ body .body {
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("../Media/MainBackground.jpg"), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 55%);
+  background-image: url("MainBackground.jpg"), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 55%);
   background-position: top;
   background-size: cover;
   background-blend-mode: soft-light;
