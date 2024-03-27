@@ -138,14 +138,16 @@ body .body {
   text-decoration: none;
 }
 .hero .content {
-  margin: 16rem auto;
+  margin: 16rem 14rem 0;
   display: flex;
-  justify-content: center;
   gap: 2vw;
   overflow-y: hidden;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .hero .content .section {
   border-radius: 16px;
@@ -155,6 +157,10 @@ body .body {
   padding: 1rem;
   height: 14rem;
   width: 14rem;
+  transition: transform 100ms ease-in;
+}
+.hero .content .section img:hover {
+  transform: scale(1.1);
 }
 .hero .content .section #exception {
   padding: 0;
@@ -173,6 +179,13 @@ body .body {
   text-align: center;
   border-radius: 32px;
   margin-top: 12rem;
+  transition: transform 100ms ease-in;
+}
+.hero .content .section .info:hover {
+  transform: translateY(-2px) scale(1.1);
+}
+.hero :hover {
+  cursor: grab;
 }
 .hero ::-webkit-scrollbar {
   display: none;

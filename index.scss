@@ -178,15 +178,14 @@ body {
   }
 
   .content {
-    margin: 16rem auto;
+    margin: 16rem 14rem 0;
     display: flex;
-    justify-content: center;
     gap: 2vw;
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-
+    user-select: none;
 
 
     .section {
@@ -197,6 +196,11 @@ body {
         padding: 1rem;
         height: 14rem;
         width: 14rem;
+        transition: transform 100ms ease-in;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
 
       #exception {
@@ -218,8 +222,17 @@ body {
         text-align: center;
         border-radius: 32px;
         margin-top: 12rem;
+        transition: transform 100ms ease-in;
+
+        &:hover {
+          transform: translateY(-2px) scale(1.1);
+        }
       }
     }
+  }
+
+  :hover {
+    cursor: grab;
   }
 
   ::-webkit-scrollbar {
