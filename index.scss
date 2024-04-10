@@ -5,6 +5,9 @@ $Blue: rgb(83, 106, 124);
 $LightBlue: rgb(68, 137, 159);
 $Yellow: rgb(194, 162, 113);
 $Gray: rgb(109, 109, 109);
+$Overlay: rgba(0, 0, 0, 0.2);
+$AlexaLightBlue: rgb(119, 155, 236);
+$AlexaBlue: rgb(108, 234, 214);
 
 $Title: 78px;
 $Subtitle: 48px;
@@ -202,6 +205,14 @@ body {
         text-decoration: none;
       }
 
+      button {
+        all: unset;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
       img {
         background-color: $White;
         padding: 1rem;
@@ -243,6 +254,42 @@ body {
 
       &:hover {
         cursor: grab;
+      }
+    }
+
+    .overlay {
+      background-color: $Overlay;
+      backdrop-filter: blur(3px);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      right: 0%;
+      top: 100%;
+
+      .italic {
+        font-style: italic;
+        font-weight: 400;
+        font-size: $Subtitle;
+        color: $White;
+        text-align: center;
+        margin-top: 35vw;
+      }
+
+      .bar {
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          $AlexaLightBlue 20%,
+          $AlexaBlue 80%,
+          $AlexaLightBlue
+        );
+        position: absolute;
+        bottom: 0;
+        height: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }

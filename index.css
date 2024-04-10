@@ -162,6 +162,12 @@ body .body {
 .hero .content .section a {
   text-decoration: none;
 }
+.hero .content .section button {
+  all: unset;
+}
+.hero .content .section button:hover {
+  cursor: pointer;
+}
 .hero .content .section img {
   background-color: rgb(255, 255, 255);
   padding: 1rem;
@@ -197,6 +203,34 @@ body .body {
 }
 .hero .content .section:hover {
   cursor: grab;
+}
+.hero .content .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  top: 100%;
+}
+.hero .content .overlay .italic {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 35vw;
+}
+.hero .content .overlay .bar {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(119, 155, 236) 20%, rgb(108, 234, 214) 80%, rgb(119, 155, 236));
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+}
+.hero .content .overlay:hover {
+  cursor: pointer;
 }
 .hero ::-webkit-scrollbar {
   display: none;

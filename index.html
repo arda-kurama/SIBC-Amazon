@@ -136,14 +136,22 @@
           <div class="info">Listening</div>
         </div>
         <div class="section">
-          <img
-            src="Media/Alexa.png"
-            alt="Alexa"
-            id="exception"
-            draggable="false"
-          />
-          <div class="body">Alexa</div>
+          <button class="alexa" onclick="openAlexa()">
+            <img
+              src="Media/Alexa.png"
+              alt="Alexa"
+              id="exception"
+              draggable="false"
+            />
+            <div class="body">Alexa</div>
+          </button>
           <div class="info">Voice Assistant</div>
+        </div>
+        <div class="overlay" id="alexa" onclick="closeAlexa()">
+          <div class="italic">
+            "When is the Notre Dame Football Game Today..."
+          </div>
+          <div class="bar"></div>
         </div>
       </div>
     </div>
