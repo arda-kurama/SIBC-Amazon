@@ -141,12 +141,13 @@ body {
       }
 
       img {
-        height: auto;
+        height: 10rem;
         width: 10rem;
         box-shadow: 2px 2px 8px $Black;
       }
 
       #exception {
+        height: auto;
         width: 8vw;
         filter: brightness(0) invert(1);
         box-shadow: 0 0 0;
@@ -154,8 +155,8 @@ body {
       }
 
       .body {
-        margin: 16px;
-        margin: 12px 0 0 0;
+        margin: 12px 64px 0;
+        text-align: center;
       }
 
       #italic {
@@ -192,6 +193,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     user-select: none;
+    padding: 2vw 2vw 0 2vw;
 
     .section {
       border-radius: 16px;
@@ -235,8 +237,7 @@ body {
         transition: transform 100ms ease-in;
 
         &:hover {
-          // transform: translateY(-2px) scale(1.1);
-          // cursor: pointer;
+          cursor: pointer;
         }
       }
 

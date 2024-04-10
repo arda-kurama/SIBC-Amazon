@@ -108,19 +108,20 @@ body .body {
   text-decoration: none;
 }
 .landing .right .bottom img {
-  height: auto;
+  height: 10rem;
   width: 10rem;
   box-shadow: 2px 2px 8px rgb(14, 23, 38);
 }
 .landing .right .bottom #exception {
+  height: auto;
   width: 8vw;
   filter: brightness(0) invert(1);
   box-shadow: 0 0 0;
   margin-bottom: 12px;
 }
 .landing .right .bottom .body {
-  margin: 16px;
-  margin: 12px 0 0 0;
+  margin: 12px 64px 0;
+  text-align: center;
 }
 .landing .right .bottom #italic {
   font-style: italic;
@@ -153,6 +154,7 @@ body .body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding: 2vw 2vw 0 2vw;
 }
 .hero .content .section {
   border-radius: 16px;
@@ -189,6 +191,9 @@ body .body {
   border-radius: 32px;
   margin-top: 12rem;
   transition: transform 100ms ease-in;
+}
+.hero .content .section .info:hover {
+  cursor: pointer;
 }
 .hero .content .section:hover {
   cursor: grab;
