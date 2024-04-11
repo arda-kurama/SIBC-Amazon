@@ -213,6 +213,7 @@ body .body {
   width: 100%;
   right: 0%;
   top: 100%;
+  display: none;
 }
 .hero .content .overlay .italic {
   font-style: italic;
